@@ -36,6 +36,8 @@ questions = []
 questionIndex = 0
 questionCount = 0
 
+question = ''
+
 
 isGameOver = False
 
@@ -57,9 +59,66 @@ def readQuestionFile():
     questionFile.close()
     print(questions)
 
+def readNextQuestion():
+    global questionIndex
+
+    questionIndex += 1
+    return questions.pop(0).split(',')
+
+def skipQuestion():
+    global questions, timeLeft
+
+    if questions and not isGameOver:
+        question = readNextQuestion()
+        timeLeft = 10
+    else:
+        gameOver()
+
+def updateTimer():
+    global timeLeft
+
+    if timeLeft:
+        timeLeft -= 1
+    else:
+        gameOver()
+
+def on_mouse_down(pos):
+
+    index = 1
+    for box in answers:
+        if box.collidepoint(pos):
+            if index is int(question[5]):
+               correctAnswer()
+            else:
+               gameOver()
+        index += 1
+    if skipBox.collidepoint(pos):
+        skipQuestion()
+        
+def correctAnswer():
+    global timeLeft, question, questions, score
+
+    score += 1
+    if questions:
+        readNextQuestion()
+        timeLeft = 10
+    else:
+        gameOver()
+
+
+def gameOver():
+    global question, timeLeft, isGameOver
+
+    isGameOver = True
+    timeLeft = 0
+
+    message = f'GAME OVER. YOU GOT {questionIndex} OF {questionCount}'
+    question = [message, '-', '-', '-', '-', 5]
+        
+
 def update():
     marquee_message()
-
+    
 def draw():
     global marqueeMessage
 
@@ -81,5 +140,14 @@ def draw():
     screen.draw.textbox('SKIP', skipBox, color = 'black', angle = -90)
     screen.draw.textbox(str(timeLeft), timerBox, color = 'black', shadow = (0.5, 0.5), scolor = 'darkGreen')
 
+    screen.draw.textbox(question[0].strip(), questionBox, color = 'white')
+
+    index = 1
+    for box in answers:
+        screen.draw.textbox(question[index].strip(), box, color = 'black')
+        index += 1
+
 readQuestionFile()
+question = readNextQuestion()
+clock.schedule_interval(updateTimer, 1)
 pgzrun.go()

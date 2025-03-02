@@ -6,6 +6,6 @@ What is the largest planet in our solar system,Saturn,Neptune,Jupiter,Venus,3
 Where is the stonehenge?,India,England,Scottland,Canada,2
 What grows quicker?,Hair,Toenail,Skin,Eyebrows,1
 Which is the tallest mountain in the world?,Mount Kilimanjaro,Mount Denali,Mount Fuji,Mount Everest,4
-Which planet is known as the red planet?,Venus,Mars,Earth,Jupitar,2
+Which planet is known as the red planet?,Venus,Mars,Earth,Jupiter,2
 Which part of the body continue to grow for your entire life?,Brain,Teeth,Nose,Eyes,3
 Which first electrical item did Thomas Edision invent?,Rice cooker,Lightbulb,Hair Dryer,Fan,2 
