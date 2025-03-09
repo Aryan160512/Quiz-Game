@@ -1,0 +1,20 @@
+Which planet is known as the Red Planet?,Mercury,Earth,Venus,Mars,4
+What is the largest organ in the human body?,Heart,Lungs,Skin,Liver,3
+In which year did the Titanic sink?,1910,1911,1912,1913,3
+Who wrote the play "Romeo and Juliet"?,Charles Dickens,William Shakespeare,Mark Twain,Ernest Hemingway,2
+What is the capital city of France?,Rome,Berlin,Paris,Madrid,3
+What is the chemical symbol for water?,O2,H2O,CO2,NaCl,2
+How many continents are there on Earth?,5,6,7,8,3
+Who was the first person to walk on the moon?,Yuri Gagarin,Buzz Aldrin,Neil Armstrong,John Glenn,3
+What is the hardest natural substance on Earth?,Gold,Iron,Diamond,Quartz,3
+Which country is known as the Land of the Rising Sun?,China,India,Japan,South Korea,3
+What is the smallest unit of life?,Atom,Molecule,Cell,Tissue,3
+What is the smallest planet in our solar system?,Mercury,Mars,Venus,Neptune,1
+Which gas is most abundant in the Earth's atmosphere?,Oxygen,Carbon Dioxide,Nitrogen,Hydrogen,3
+What is the capital of Canada?,Vancouver,Montreal,Ottawa,Toronto,3
+Who discovered penicillin?,Marie Curie,Alexander Fleming,Albert Einstein,Isaac Newton,2
+In which year did the Berlin Wall fall?,1987,1988,1989,1990,3
+What is the name of the theory that describes the origin of the universe?,Big Bang Theory,String Theory,Theory of Relativity,Quantum Mechanics,1
+Who was the first female Prime Minister of the United Kingdom?,Margaret Thatcher,Angela Merkel,Theresa May,Indira Gandhi,1
+What is the primary function of red blood cells?,Transporting oxygen,Fighting infections,Clotting blood,Maintaining pH balance,1
+What is the biggest airport in India?,Indira Ghandi International Airport,Rajiv Ghandi International Airport,Chennai International Airport,Tirupati Airport,2
